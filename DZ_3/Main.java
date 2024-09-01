@@ -18,5 +18,13 @@ public class Main {
         // Пример использования Pair
         Pair<String, Integer> pair = new Pair<>("Age", 25);
         System.out.println("Pair: " + pair);
+
+        // Пример использования DatabaseOperations через DatabaseManager
+        DatabaseOperations dbOps = new DatabaseManager();
+        dbOps.save("First Entry");
+        dbOps.save("Second Entry");
+        dbOps.fetch(1); // Should fetch "First Entry"
+        dbOps.delete("First Entry");
+        dbOps.fetch(1); // Should return null or indicate not found
     }
 }
