@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.nio.charset.StandardCharsets;
 
 public class ChatHistoryManager {
-    private static final String LOG_FILE = "chat_history.txt";
+    private static final String LOG_FILE = "DZ_1" + File.separator + "chat_history.txt";
 
     public void saveMessage(String message) {
         try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
