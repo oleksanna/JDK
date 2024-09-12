@@ -46,9 +46,9 @@ public class Main {
 
         Employee employee = directory.employeesFindById(2);
         if (employee != null) {
-            System.out.println("Сотрудник со ID 2 найден: " + employee.getName());
+            System.out.println("Сотрудник с ID 2 найден: " + employee.getName());
         } else {
-            System.out.println("Сотрудник со ID 2 не найден:");
+            System.out.println("Сотрудник с ID 2 не найден:");
         }
     }
 }
